@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="margin:0;padding:0;">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>Personal Agent 与互联网商业结构</title>
+<style>
+  html,body{margin:0;padding:0;-webkit-text-size-adjust:100%;background:#f5f7fa;}
+  .page{box-sizing:border-box;padding:calc(18px + env(safe-area-inset-top)) calc(18px + env(safe-area-inset-right)) calc(18px + env(safe-area-inset-bottom)) calc(18px + env(safe-area-inset-left));}
+  @media (max-width:560px){
+    .page{padding:calc(14px + env(safe-area-inset-top)) calc(12px + env(safe-area-inset-right)) calc(16px + env(safe-area-inset-bottom)) calc(12px + env(safe-area-inset-left));}
+    .h-title{font-size:19px !important;}
+    .h-sub{font-size:13px !important;margin-bottom:14px !important;}
+    .intent-box{font-size:16px !important;padding:13px 14px !important;}
+    .path-card{padding:14px !important;}
+    .card-desc{margin-bottom:11px !important;}
+    .ladder{gap:6px !important;font-size:12.5px !important;}
+    .ladder span{padding:6px 10px !important;}
+    .footer-box{font-size:14px !important;padding:13px 14px !important;line-height:1.65 !important;}
+  }
+</style>
+</head>
+<body>
+<div class="page" style="width:100%;box-sizing:border-box;background:#f5f7fa;color:#172033;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;">
+  <div style="max-width:900px;margin:0 auto;">
+    <div class="h-title" style="font-size:22px;font-weight:800;line-height:1.35;margin-bottom:8px;">Personal Agent 的发展逻辑</div>
+    <div class="h-sub" style="font-size:14px;line-height:1.7;color:#596579;margin-bottom:18px;">
+      核心变量不是模型是否足够聪明，而是外部商业服务能否被发现、理解、调用并完成交易。
+    </div>
+
+    <div style="display:flex;justify-content:center;margin-bottom:10px;">
+      <div class="intent-box" style="width:min(100%,360px);box-sizing:border-box;background:#172033;color:#fff;border-radius:12px;padding:14px 18px;text-align:center;font-size:17px;font-weight:750;">
+        用户意图 → Personal Agent
+      </div>
+    </div>
+    <div style="text-align:center;font-size:22px;color:#78869a;line-height:1;margin-bottom:10px;">↓</div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:stretch;">
+      <div class="path-card" style="flex:1 1 280px;background:#fff;border:1px solid #cfd8e6;border-top:5px solid #2878d0;border-radius:12px;padding:16px;box-sizing:border-box;">
+        <div style="font-size:17px;font-weight:800;color:#185b9f;margin-bottom:5px;">路径 A：分散服务连接</div>
+        <div class="card-desc" style="font-size:13px;color:#6b7688;margin-bottom:14px;">海外更常见，但不是绝对结构</div>
+        <div style="background:#edf5ff;border-radius:9px;padding:11px;text-align:center;font-weight:700;">Personal Agent</div>
+        <div style="text-align:center;color:#2878d0;font-size:20px;">↓</div>
+        <div style="display:flex;gap:7px;flex-wrap:wrap;">
+          <div style="flex:1 1 80px;background:#f7faff;border:1px solid #bdd3eb;border-radius:8px;padding:10px 6px;text-align:center;font-size:13px;">企业官网</div>
+          <div style="flex:1 1 80px;background:#f7faff;border:1px solid #bdd3eb;border-radius:8px;padding:10px 6px;text-align:center;font-size:13px;">垂直服务</div>
+          <div style="flex:1 1 80px;background:#f7faff;border:1px solid #bdd3eb;border-radius:8px;padding:10px 6px;text-align:center;font-size:13px;">开放 API</div>
+        </div>
+        <div style="margin-top:13px;font-size:14px;line-height:1.65;color:#414d60;">
+          <b>优势：</b>选择空间大、连接直接<br>
+          <b>挑战：</b>接口分散、标准不统一
+        </div>
+      </div>
+
+      <div class="path-card" style="flex:1 1 280px;background:#fff;border:1px solid #cfd8e6;border-top:5px solid #dc7b25;border-radius:12px;padding:16px;box-sizing:border-box;">
+        <div style="font-size:17px;font-weight:800;color:#a65412;margin-bottom:5px;">路径 B：平台能力调用</div>
+        <div class="card-desc" style="font-size:13px;color:#6b7688;margin-bottom:14px;">中国更可能形成的重要路径</div>
+        <div style="background:#fff3e8;border-radius:9px;padding:11px;text-align:center;font-weight:700;">Personal Agent</div>
+        <div style="text-align:center;color:#dc7b25;font-size:20px;">↓</div>
+        <div style="background:#fffaf5;border:1px solid #edc397;border-radius:8px;padding:10px;text-align:center;font-size:14px;font-weight:700;">Platform Agent / 平台 API</div>
+        <div style="text-align:center;color:#dc7b25;font-size:20px;">↓</div>
+        <div style="display:flex;gap:7px;flex-wrap:wrap;">
+          <div style="flex:1 1 68px;background:#fffaf5;border:1px solid #edc397;border-radius:8px;padding:9px 5px;text-align:center;font-size:13px;">搜索</div>
+          <div style="flex:1 1 68px;background:#fffaf5;border:1px solid #edc397;border-radius:8px;padding:9px 5px;text-align:center;font-size:13px;">交易</div>
+          <div style="flex:1 1 68px;background:#fffaf5;border:1px solid #edc397;border-radius:8px;padding:9px 5px;text-align:center;font-size:13px;">履约</div>
+        </div>
+        <div style="margin-top:13px;font-size:14px;line-height:1.65;color:#414d60;">
+          <b>优势：</b>链路完整、接入节点较少<br>
+          <b>挑战：</b>平台准入、排序与利益冲突
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;font-size:22px;color:#78869a;line-height:1;margin:12px 0;">↓</div>
+
+    <div style="background:#fff;border:1px solid #cfd8e6;border-radius:12px;padding:16px;">
+      <div style="font-size:16px;font-weight:800;text-align:center;margin-bottom:13px;">Agent 可访问性的完整阶梯</div>
+      <div class="ladder" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:7px;font-size:13px;">
+        <span style="background:#edf5ff;border-radius:20px;padding:8px 12px;">可发现</span>
+        <span style="color:#8490a0;">→</span>
+        <span style="background:#edf5ff;border-radius:20px;padding:8px 12px;">可理解</span>
+        <span style="color:#8490a0;">→</span>
+        <span style="background:#eef8f4;border-radius:20px;padding:8px 12px;">可比较</span>
+        <span style="color:#8490a0;">→</span>
+        <span style="background:#fff3e8;border-radius:20px;padding:8px 12px;">可调用</span>
+        <span style="color:#8490a0;">→</span>
+        <span style="background:#fff3e8;border-radius:20px;padding:8px 12px;">可交易</span>
+        <span style="color:#8490a0;">→</span>
+        <span style="background:#f5efff;border-radius:20px;padding:8px 12px;">可履约</span>
+      </div>
+      <div style="margin-top:14px;padding-top:13px;border-top:1px dashed #ced6e1;text-align:center;font-size:14px;line-height:1.65;color:#414d60;">
+        <b>入口竞争的变化：</b><br>
+        “让用户进入我的 App” → “让 Agent 能够调用和编排我的能力”
+      </div>
+    </div>
+
+    <div class="footer-box" style="margin-top:14px;background:#172033;color:#fff;border-radius:12px;padding:15px 17px;font-size:15px;line-height:1.7;text-align:center;">
+      最终形态可能不是 Personal Agent 取代平台，<br>
+      而是形成 <b>Personal Agent ↔ Platform Agent ↔ 商家服务</b> 的新分工。
+    </div>
+  </div>
+</div>
+</body>
+</html>
